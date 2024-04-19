@@ -204,7 +204,7 @@ export const getAllStudent = async () => {
 
 /**
  * Get all courses from the database,
- * TODO: Add pagination
+ * 
  * @returns
  */
 export const getAllCourse = async () => {
@@ -219,7 +219,7 @@ export const getAllCourse = async () => {
 
 /**
  * Get all faculty from the database,
- * TODO: add pagination
+ * 
  * @returns
  */
 export const getAllFaculty = async () => {
@@ -235,6 +235,11 @@ export const getAllFaculty = async () => {
   }
 };
 
+/**
+ * Get all getCourseDetails from the database,
+ * 
+ * @returns
+ */
 export const getCourseDetails = async (courseId: number) => {
   try {
     return await prisma.course.findUnique({
